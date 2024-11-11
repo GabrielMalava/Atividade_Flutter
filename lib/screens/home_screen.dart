@@ -12,7 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final ApiService _apiService = ApiService();
   int _selectedIndex = 0;
 
-  // Função para navegar até a RegisterServiceScreen e atualizar a WikiScreen ao retornar
+ 
   Future<void> _navigateToRegisterService(BuildContext context) async {
     final result = await Navigator.push(
       context,
