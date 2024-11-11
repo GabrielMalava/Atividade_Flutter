@@ -15,10 +15,10 @@ class _WikiScreenState extends State<WikiScreen> {
   @override
   void initState() {
     super.initState();
-    _loadServices(); // Carrega a lista inicial de serviços
+    _loadServices();
   }
 
-  // Carrega os serviços da API ou do armazenamento local
+ 
   void _loadServices() {
     _apiService.fetchServices().then((services) {
       setState(() {
