@@ -3,9 +3,9 @@ import 'package:http/http.dart' as http;
 import '../models/service_model.dart';
 
 class ApiService {
-  final String baseUrl = 'http://localhost:3000'; // URL base do JSON Server
+  final String baseUrl = 'http://localhost:3000';
 
-  // Método para buscar a lista de serviços
+
   Future<List<ServiceModel>> fetchServices() async {
     final response = await http.get(Uri.parse('$baseUrl/services'));
 
@@ -17,7 +17,7 @@ class ApiService {
     }
   }
 
-  // Método para adicionar um novo serviço
+ 
   Future<ServiceModel> addService(ServiceModel service) async {
   try {
     final response = await http.post(
