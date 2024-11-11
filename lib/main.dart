@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart'; // Certifique-se de que o caminho está correto
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(), // Define HomeScreen como a tela inicial
+      home: HomeScreen(), 
+      
     );
   }
 }
